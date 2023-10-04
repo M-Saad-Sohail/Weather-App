@@ -51,8 +51,7 @@ const WeatherApp = () => {
                 ) : (
                     ""
                 )}
-
-                {/* <Loader /> */}
+                
 
             </div>
         </>
