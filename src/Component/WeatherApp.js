@@ -41,17 +41,20 @@ const WeatherApp = () => {
                     loader === true ? (
                         <Loader />
                     ) : (
-                        <div className='text-white text-2xl font-semibold text-center space-y-2'>
-                            <p className='text-4xl'>{weather.name}</p>
-                            <p>Temperature: {weather.main.temp} °C</p>
-                            <p>Cloud: {weather.weather[0].main}</p>
-                            <p>Description: {weather.weather[0].description}</p>
+                        <div className='flex flex-col items-center'>
+                            <img className='w-56' src="https://www.pngall.com/wp-content/uploads/11/Weather-PNG-Images.png" alt=''/>
+                            <div className='text-white text-2xl font-semibold text-center space-y-2'>
+                                <p className='text-4xl'>{weather.name}</p>
+                                <p>Temperature: {weather.main.temp} °C</p>
+                                <p>Cloud: {weather.weather[0].main}</p>
+                                <p>Description: {weather.weather[0].description}</p>
+                            </div>
                         </div>
                     )
                 ) : (
                     ""
                 )}
-                
+
 
             </div>
         </>
